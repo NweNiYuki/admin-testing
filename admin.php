@@ -49,7 +49,7 @@ $result = $conn->query($query);
       <td><?php echo $row['name'] ?></td>
       <td><?php echo $row['price'] ?></td>
       <td><a href="del.php? id=<?php echo $row['id']  ?>" class="del">Cancel</a></td>
-      <td><a href="">Edit</td>
+      <td><a href="update.php?id=<?php echo $row['id'] ?>" class="edit" >Edit</td>
   <?php endwhile; ?>
       
     </tr>
